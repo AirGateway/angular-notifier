@@ -1,33 +1,36 @@
 {
-	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-	"version": 1,
-	"newProjectRoot": "projects",
-	"projects": {
-		"angular-notifier": {
-			"projectType": "library",
-			"root": "projects/angular-notifier",
-			"sourceRoot": "projects/angular-notifier/src",
-			"architect": {
-				"build": {
-					"builder": "@angular-devkit/build-ng-packagr:build",
-					"options": {
-						"tsConfig": "projects/angular-notifier/tsconfig.lib.json",
-						"project": "projects/angular-notifier/ng-package.json"
-					}
-				,          "configurations": {
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-notifier": {
+      "projectType": "library",
+      "root": "projects/angular-notifier",
+      "sourceRoot": "projects/angular-notifier/src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-notifier/tsconfig.lib.json",
+            "project": "projects/angular-notifier/ng-package.json"
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/angular-notifier/tsconfig.lib.prod.json"
             }
           }
-},
-				"test": {
-					"builder": "@angular-builders/jest:run",
-					"options": {
-						"configPath": "jest.config.json"
-					}
-				}
-			}
-		}
-	},
-	"defaultProject": "angular-notifier"
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "configPath": "jest.config.json"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-notifier",
+  "cli": {
+    "analytics": false
+  }
 }
