@@ -1,7 +1,7 @@
 {
-	"name": "angular-notifier",
+	"name": "angular-notifier-fixed",
 	"description": "A well designed, fully animated, highly customizable, and easy-to-use notification library for your Angular application.",
-	"version": "6.0.1",
+	"version": "6.0.2",
 	"author": {
 		"name": "Dominique Müller",
 		"email": "dominique.m.mueller@gmail.com",
@@ -10,11 +10,11 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dominique-mueller/angular-notifier.git"
+		"url": "https://github.com/AirGateway/angular-notifier.git"
 	},
-	"homepage": "https://github.com/dominique-mueller/angular-notifier",
+	"homepage": "https://github.com/AirGateway/angular-notifier",
 	"bugs": {
-		"url": "https://github.com/dominique-mueller/angular-notifier/issues"
+		"url": "https://github.com/AirGateway/angular-notifier/issues"
 	},
 	"keywords": [
 		"angular",
