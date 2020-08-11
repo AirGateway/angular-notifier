@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { NotifierModule, NotifierOptions } from 'angular-notifier';
+import {NotifierModule, NotifierOptions} from 'angular-notifier';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 
 /**
  * Custom angular notifier options
@@ -52,7 +52,7 @@ const customNotifierOptions: NotifierOptions = {
 /**
  * App module
  */
-@NgModule( {
+@NgModule({
 	bootstrap: [
 		AppComponent
 	],
@@ -61,7 +61,8 @@ const customNotifierOptions: NotifierOptions = {
 	],
 	imports: [
 		BrowserModule,
-		NotifierModule.withConfig( customNotifierOptions )
+		NotifierModule.withConfig(customNotifierOptions)
 	]
-} )
-export class AppModule {}
+})
+export class AppModule {
+}
